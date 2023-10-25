@@ -38,7 +38,7 @@ jobs:
       - name: Build Node Site
         run: |
           npm install --legacy-peer-deps
-          npm run build
+          CI=false npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
